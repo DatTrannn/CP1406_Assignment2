@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="externalcss.css" type="text/css">
+        <script src="validate.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title>Contact Us</title>
+        <style>
+            main {
+                color: #945A37;
+            }
+            main h3{
+                font-family: 'Pattaya', sans-serif;
+            }
+            main .row{
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            main button {
+                height: 100%;
+                padding: 16px;
+                margin-right: 0;
+                background-color: #e98c46;
+                color: white;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            .subrow{
+                margin-bottom: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="logo-link"><img src="./Pics/Logo.png" alt="Petrite Treats' logo" class="logo"></a>
+            <nav>
+                <div class="nav_links" id="nav_links">
+                    <i class="fas fa-times" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="menu.html" class="menu">MENU</a></li>
+                        <li><a href="about.html" class="about">ABOUT ME</a></li>
+                        <li><a href="special.html" class="special">SPECIAL</a></li>
+                        <li><a href="contactUs.html" class="contactUs current">CONTACT US</a></li>
+                    </ul>
+                </div>    
+                <i class="fas fa-bars" onClick="showMenu()"></i>
+            </nav>
+        </header>
+        <main>
+            <div class="bigImage" style="background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ),url('./Pics/contactusbigimg.jpg')">
+                <div class="wrapper">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col col1">
+                    <h3>Our Bakery</h3><br>
+                    <h4><b>ADDRESS</b></h4>
+                    <p>123 Prize Lane, Kirwan, QLD</p><br>
+                    <h4><b>CONTACTS</b></h4>
+                    <p>0455 5555 555</p><br>
+                    <h4><b>CATERIN</b></h4>
+                    <p>0433 3333 333</p>
+                </div>
+                <div class="col col2">
+                    <h4 class="subrow"><b>STAY UPDATED WITH PETITE TREATS BAKERY</b></h4>
+                    <p class="subrow">Sign up for our stories, baked products, and equipments</p>
+                    <form name="myForm1" class="subrow" onsubmit="return validateForm1()" action="action_page2.php" method="post">
+                        <div class="form-inline">
+                            <input type="email" name="email" id="email" placeholder="you@yourname.com">
+                            <button type="submit">SUBMIT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_col">
+                <ul class="submenu">
+                    <li><a href="menu.html" style="color: white">MENU</a></li>
+                    <li><a href="about.html" style="color: white">ABOUT ME</a></li>
+                    <li><a href="special.html" style="color: white">SPECIAL</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <form name= "myForm" action="action_page.php" method="post" onsubmit="return validateForm()">
+                    <h3>Get In Touch!</h3><br>
+                    <div class="form_row">
+                        <input name="fname" type="text" placeholder="First Name">
+                        <input name="zipcode" type="number" pattern="[0-9]*" placeholder="Zip Code">
+                    </div>
+                    <div class="form_row">
+                        <input name="email" type="email" id="email" placeholder="Email Address">
+                        <button type="submit"><b>SIGN UP</b></button>
+                    </div>
+                </form>
+                <ul id="details">
+                    <li>Contacts | 0455 5555 555</li>
+                    <li>Caterin  | 0433 3333 333</li>
+                    <li>Address  | 123 Prize Lane, Kirwan, QLD</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

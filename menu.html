@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu Page</title>
+        <link rel="stylesheet" href="externalcss.css" type="text/css">
+        <link rel="stylesheet" href="externalcss.css" type="text/css">
+        <script src="validate.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="logo-link"><img src="./Pics/Logo.png" alt="Petrite Treats' logo" class="logo"></a>
+            <nav>
+                <div class="nav_links" id="nav_links">
+                    <i class="fas fa-times" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="menu.html" class="menu current">MENU</a></li>
+                        <li><a href="about.html" class="about">ABOUT ME</a></li>
+                        <li><a href="special.html" class="special">SPECIAL</a></li>
+                        <li><a href="contactUs.html" class="contactUs">CONTACT US</a></li>
+                    </ul>
+                </div>    
+                <i class="fas fa-bars" onClick="showMenu()"></i>
+            </nav>
+        </header>
+        <main>
+            <div class="bigImage" style="background-image: linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ), url('./Pics/menubigimg.jpg')">
+                <div class="wrapper">
+                    <h1>Menu</h1>
+                    <p>Made from the finest ingredients</p>
+                </div>
+            </div>
+            <div class="productPics" style="padding-top: 20px;">
+                <a href="Donut.html" class="pic">
+                    <img src= "./Pics/donut.jpg" alt="donut">
+                    <div class="description">
+                        <h2 class="heading_description">Donuts</h2>
+                        <p>$4.50</p>
+                    </div>
+                </a>
+                <a href="Vanilla_slice.html" class="pic">
+                    <img src="./Pics/vanilla slice.jpg" alt="vanilla slice">
+                    <div class="description">
+                        <h2 class="heading_description">Vanilla Slice</h2>
+                        <p>$4.50</p>
+                    </div>
+                </a>
+                <a href="Randy_tart.html" class="pic">
+                    <img src="./Pics/randy tart.jpg" alt="randy tart">
+                    <div class="description">
+                        <h2 class="heading_description">Randy Tart</h2>
+                        <p>$3.95</p>
+                    </div>
+                </a>
+                <a href="Custard_tart.html" class="pic">
+                    <img src="./Pics/custard tart.jpg" alt="custard tart">
+                    <div class="description">
+                        <h2 class="heading_description">Custard tart</h2>
+                        <p>$3.95</p>
+                    </div>
+                </a>
+                <a href="Raspberry_cheesecake.html" class="pic">
+                    <img src="./Pics/raspberry cheesecake.jpg" alt="raspberry cheesecake">
+                    <div class="description">
+                        <h2 class="heading_description">Raspberry Cheesecake</h2>
+                        <p>$5.50</p>
+                    </div>
+                </a>
+                <a href="Apple_cake_slice.html" class="pic">
+                    <img src="./Pics/apple cake slice.jpg" alt="Apple Cake Slice">
+                    <div class="description">
+                        <h2 class="heading_description">Apple Cake Slice</h2>
+                        <p>$5.50</p>
+                    </div>
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_col">
+                <ul class="submenu">
+                    <li><a href="menu.html" style="color: white">MENU</a></li>
+                    <li><a href="about.html" style="color: white">ABOUT ME</a></li>
+                    <li><a href="special.html" style="color: white">SPECIAL</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <form name= "myForm" action="#" onsubmit="return validateForm()">
+                    <h3>Get In Touch!</h3><br>
+                    <div class="form_row">
+                        <input name="fname" type="text" placeholder="First Name">
+                        <input name="zipcode" type="number" pattern="[0-9]*" placeholder="Zip Code">
+                    </div>
+                    <div class="form_row">
+                        <input name="email" type="email" id="email" placeholder="Email Address">
+                        <button type="submit"><b>SIGN UP</b></button>
+                    </div>
+                </form>
+                <ul id="details">
+                    <li>Contacts | 0455 5555 555</li>
+                    <li>Caterin  | 0433 3333 333</li>
+                    <li>Address  | 123 Prize Lane, Kirwan, QLD</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

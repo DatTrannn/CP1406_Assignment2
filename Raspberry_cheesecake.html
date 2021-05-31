@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="externalcss.css" type="text/css">
+        <script src="validate.js"></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <title>Raspberry Cheesecake</title>
+    </head>
+    <body>
+        <header>
+            <a href="index.html" id="logo-link"><img src="./Pics/Logo.png" alt="Petrite Treats' logo" class="logo"></a>
+            <nav>
+                <div class="nav_links" id="nav_links">
+                    <i class="fas fa-times" onClick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="menu.html" class="menu">MENU</a></li>
+                        <li><a href="about.html" class="about">ABOUT ME</a></li>
+                        <li><a href="special.html" class="special">SPECIAL</a></li>
+                        <li><a href="contactUs.html" class="contactUs">CONTACT US</a></li>
+                    </ul>
+                </div>    
+                <i class="fas fa-bars" onClick="showMenu()"></i>
+            </nav>
+        </header>
+        <main>
+            <section class="bigImage" style="background-image:linear-gradient(
+                rgba(0, 0, 0, 0.5),
+                rgba(0, 0, 0, 0.5)
+              ), url('./Pics/raspberry\ cheesecake.jpg'); height: 760px;">
+                <div class="wrapper">
+                    <p style="font-weight:700; ">Raspberry Cheesecake is a sweet dessert consisting of mixture of soft, fresh cheese, eggs, and sugar. It may be flavored by adding vanilla, spices, lemon, chocolate, pumpkin, or other flavors to the cheese layer. The whole calrories is 200kcal for one piece.</p>
+                </div>   
+            </section>
+        </main>
+        <footer>
+            <div class="footer_col">
+                <ul class="submenu">
+                    <li><a href="menu.html" style="color: white">MENU</a></li>
+                    <li><a href="about.html" style="color: white">ABOUT ME</a></li>
+                    <li><a href="special.html" style="color: white">SPECIAL</a></li>
+                </ul>
+            </div>
+            <div class="footer_col">
+                <form name= "myForm" action="action_page.php" method="post" onsubmit="return validateForm()">
+                    <h3>Get In Touch!</h3><br>
+                    <div class="form_row">
+                        <input name="fname" type="text" placeholder="First Name">
+                        <input name="zipcode" type="number" pattern="[0-9]*" placeholder="Zip Code">
+                    </div>
+                    <div class="form_row">
+                        <input name="email" type="email" id="email" placeholder="Email Address">
+                        <button type="submit"><b>SIGN UP</b></button>
+                    </div>
+                </form>
+                <ul id="details">
+                    <li>Contacts | 0455 5555 555</li>
+                    <li>Caterin  | 0433 3333 333</li>
+                    <li>Address  | 123 Prize Lane, Kirwan, QLD</li>
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>
